@@ -1,7 +1,7 @@
 # RAG-chatbot
 
 ## Proof of Concept for a knowledge chatbot using Retrieval Augmented Generation (RAG) techniques.
-This is a proof of concept of using RAG techniques to add 3rd party information to an LLM. It is agentic, has memory, and a number of advanced & emerging RAG techniques were experimented on. A simple chat UI was built to facilitate the question and answering interaction.
+This is a proof of concept of using RAG techniques to add 3rd party information to an LLM. It is agentic, has memory, and a number of advanced & emerging RAG techniques were experimented on. A simple chat UI was built to facilitate the question and answering.
 
 ![Alt text](read_me_assets/demo.png)
 
