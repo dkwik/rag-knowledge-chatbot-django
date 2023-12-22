@@ -1,0 +1,33 @@
+# version: '3.8'
+# services:
+#   neo4j:
+#     image: neo4j:4.4.0
+#     ports:
+#       - 7474:7474
+#       - 7687:7687
+#     restart: unless-stopped
+#     environment:
+#       - NEO4J_AUTH=neo4j/password
+#       - NEO4J_PLUGINS=["apoc"]
+#       - NEO4J_apoc_import_file_enabled=true
+#     volumes:
+#       - ./db/data:/data
+#       - ./db/conf:/conf
+#       - ./db/plugins:/plugins
+
+
+version: '3.8'
+services:
+  neo4j:
+    image: neo4j:4.4.0
+    environment:
+      NEO4J_AUTH: neo4j/password
+      NEO4J_PLUGINS: '["apoc"]'
+      # Additional environment variables can be set here
+    volumes:
+      - ./db/data:/data
+      - ./db/conf:/conf 
+      - ./db/plugins:/plugins
+    ports:
+      - "7474:7474" # HTTP
+      - "7687:7687" # Bolt
